@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Power BI
+*.pbix.autosave
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
