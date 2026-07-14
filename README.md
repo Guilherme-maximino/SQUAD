@@ -1,140 +1,253 @@
 # SQUAD
 
-> **Football Management Analitcs Platform**
-
-SQUAD (Scouting, Quality of Play, Unified Finance, Athlete Evolution and Data Decisions) é uma plataforma de inteligência esportiva desenvolvida para centralizar dados relacionados ao desempenho esportivo, financeiro e administrativo de um clube de futebol.
-
-O projeto nasceu como um desafio pessoal para aplicar conhecimentos em Análise de Dados, Python, SQL e Business Intelligence utilizando um ambiente de simulação esportiva (EA Sports FC) como fonte de dados.
-
-Seu principal objetivo é transformar dados operacionais em informações estratégicas para apoiar tomadas de decisão, simulando o funcionamento de um departamento profissional de análise de desempenho.
+> **Football Management Analytics Platform**
+*A personal Data Analytics project focused on football management and Business Intelligence.*
 
 ---
 
-# About
+## About
 
-O SQUAD foi concebido como uma plataforma modular capaz de integrar informações de diferentes áreas de um clube de futebol.
+SQUAD (Scouting, Quality of Play, Unified Finance, Athlete Evolution and Data Decisions) é uma plataforma de análise de dados voltada para a gestão esportiva.
 
-Embora inicialmente utilize dados provenientes de um save do EA Sports FC, toda sua arquitetura está sendo desenvolvida para representar processos reais de gestão esportiva, permitindo futuras integrações com APIs, OCR, arquivos CSV ou bancos de dados externos.
+O projeto centraliza informações sobre desempenho esportivo, finanças e evolução do elenco, transformando esses dados em dashboards e indicadores que auxiliam na tomada de decisão dentro de um clube de futebol.
+
+Embora utilize inicialmente um save do **EA Sports FC** como fonte de dados, toda a estrutura foi planejada para representar processos reais de gestão esportiva, permitindo que novas formas de coleta de dados sejam incorporadas no futuro.
 
 ---
 
-# Objectives
+## Why SQUAD?
+
+O SQUAD nasceu da ideia de unir um hobby pessoal — o modo carreira do EA Sports FC — com o aprendizado em Análise de Dados.
+
+Mais do que gerar dashboards, o projeto busca simular como um departamento de inteligência esportiva poderia organizar informações para apoiar decisões relacionadas ao elenco, desempenho esportivo e saúde financeira de um clube.
+
+Ao mesmo tempo, ele funciona como um laboratório prático para aplicar conceitos de Python, SQL, modelagem de dados e Business Intelligence em um contexto próximo ao mercado.
+
+---
+
+## Contents
+
+- About
+- Why SQUAD?
+- Objectives
+- Features
+- Architecture
+- Tech Stack
+- Project Structure
+- Development Workflow
+- Roadmap
+- Future Improvements
+- Project Status
+- Documentation
+- Author
+- License
+
+---
+
+## Objectives
 
 - Centralizar informações esportivas.
 - Gerenciar indicadores financeiros.
 - Monitorar a evolução dos atletas.
-- Auxiliar decisões da diretoria.
+- Apoiar decisões estratégicas.
 - Criar dashboards profissionais no Power BI.
-- Aplicar conceitos de Engenharia de Dados.
-- Servir como projeto de portfólio.
+- Aplicar conceitos de Python, SQL e Business Intelligence.
+- Desenvolver um projeto sólido para portfólio.
 
 ---
 
-# Features
+## Features
 
 ### Scouting
 
-- Controle de atletas observados
-- Valores de mercado
-- Contratos
-- Relatórios técnicos
+- Controle de atletas observados.
+- Valores de mercado.
+- Contratos.
+- Relatórios técnicos.
 
-### Squad Performance
+### Quality of Play
 
-- Estatísticas individuais
-- Estatísticas coletivas
-- Evolução durante a temporada
-- Indicadores de desempenho
+- Estatísticas individuais.
+- Estatísticas coletivas.
+- Evolução durante a temporada.
+- Indicadores de desempenho.
 
-### Finance
+### Unified Finance
 
-- Receitas
-- Despesas
-- Fluxo de caixa
-- Salários
-- Transferências
+- Receitas.
+- Despesas.
+- Fluxo de caixa.
+- Salários.
+- Transferências.
 
-### Academy
+### Athlete Evolution
 
-- Controle da base
-- Evolução de jovens atletas
+- Controle da categoria de base.
+- Evolução dos jovens atletas.
+- Promoções ao elenco principal.
 
-### Analytics
+### Data Decisions
 
-- Dashboards Power BI
-- KPIs
-- Comparativos
-- Relatórios gerenciais
+- Dashboards no Power BI.
+- KPIs.
+- Comparativos entre jogadores.
+- Relatórios gerenciais.
 
 ---
 
-# Architecture
+## Architecture
 
-O projeto será dividido em quatro camadas principais.
+O funcionamento da primeira versão do SQUAD segue um fluxo simples, permitindo que o projeto evolua gradualmente sem perder organização.
 
 ```
-Python
-        ↓
+EA Sports FC
+      │
+      ▼
+Manual Data Collection
+      │
+      ▼
 SQLite Database
-        ↓
-ETL
-        ↓
+      │
+      ▼
+Python
+(Data Processing & Validation)
+      │
+      ▼
 Power BI
+      │
+      ▼
+Dashboards
+```
+
+Essa arquitetura foi escolhida por ser simples, organizada e fácil de expandir futuramente.
+
+---
+
+## Tech Stack
+
+| Tecnologia | Utilização |
+|------------|------------|
+| Python | Processamento e automação |
+| SQLite | Banco de dados |
+| SQL | Consultas e modelagem |
+| Power BI | Dashboards |
+| Git | Versionamento |
+| GitHub | Hospedagem do projeto |
+| Visual Studio Code | Desenvolvimento |
+
+---
+
+## Project Structure
+
+```
+SQUAD
+│
+├── config/
+├── database/
+├── docs/
+├── scripts/
+├── src/
+├── requirements.txt
+├── README.md
+└── SQUAD.code-workspace
 ```
 
 ---
 
-# Tech Stack
+## Development Workflow
 
-- Python
-- SQLite
-- SQL
-- Power BI
-- Git
-- GitHub
-- Visual Studio Code
+O desenvolvimento do SQUAD é realizado de forma incremental.
 
----
+Cada Sprint segue o mesmo ciclo:
 
-# Project Structure
+```
+Planning
+    │
+    ▼
+Development
+    │
+    ▼
+Review
+    │
+    ▼
+Documentation Update
+    │
+    ▼
+Git Commit
+    │
+    ▼
+Next Sprint
+```
 
-Em construção.
-
----
-
-# Roadmap
-
-- X Estrutura inicial
-- X Documentação
--  Banco de Dados
--  ETL
--  Interface Python
--  Dashboards
--  OCR
--  Automações
--  Release v1.0
+Essa metodologia garante que cada evolução do projeto seja documentada e registrada antes do início da próxima etapa.
 
 ---
 
-# Future Improvements
+## Roadmap
 
-- OCR para leitura automática do EA FC.
+| Etapa | Status |
+|--------|--------|
+| Foundation | ✅ |
+| Documentation | ✅ |
+| Standardization | 🟡 |
+| Database | ⬜ |
+| Python & SQL | ⬜ |
+| Dashboards | ⬜ |
+| Automation | ⬜ |
+| Version 1.0 | ⬜ |
+
+---
+
+## Future Improvements
+
+Algumas funcionalidades planejadas para versões futuras:
+
+- OCR para leitura automática do EA Sports FC.
 - Integração com APIs.
-- Banco PostgreSQL.
+- Migração para PostgreSQL.
 - Dashboard Web.
-- Machine Learning para previsão de desempenho.
-- Sistema de autenticação.
+- Machine Learning para análises preditivas.
+- Sincronização em nuvem.
+
+Essas funcionalidades representam a visão de longo prazo do projeto e não fazem parte da primeira versão.
 
 ---
 
-# Author
+## Project Status
+
+| Informação | Valor |
+|------------|-------|
+| Current Version | v0.1 — Foundation |
+| Current Sprint | Sprint 1.3 — Project Standardization |
+| Status | 🟡 In Development |
+
+---
+
+## Documentation
+
+A documentação completa do projeto está disponível na pasta `/docs`.
+
+Principais documentos:
+
+- Architecture
+- Roadmap
+- Modules
+- Decisions
+- Meeting Notes
+- Changelog
+
+---
+
+## Author
 
 **Guilherme Maximino**
 
-Projeto desenvolvido para fins de estudo, portfólio e evolução profissional na área de Análise de Dados e Business Intelligence.
+Projeto desenvolvido para fins de estudo, aprendizado e construção de portfólio na área de Análise de Dados, Engenharia de Dados e Business Intelligence.
 
 ---
 
-# License
+## License
 
-Este projeto é distribuído exclusivamente para fins educacionais.
+Este projeto foi desenvolvido exclusivamente para fins educacionais, aprendizado e construção de portfólio.
+
+Seu objetivo é demonstrar a aplicação prática de conceitos relacionados à Análise de Dados, Engenharia de Dados e Business Intelligence utilizando um cenário de gestão esportiva.
