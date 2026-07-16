@@ -161,3 +161,29 @@ Em vez de desenvolver dashboards para um jogo, a plataforma será capaz de atend
 | 006 | Arquitetura modular | OK |
 | 007 | Documentação híbrida | OK |
 | 008 | Save tratado como cliente | OK |
+
+---
+
+## ADR-001 — Modelagem das estatísticas dos jogadores
+
+### Contexto
+
+Durante a modelagem conceitual foi discutido se as estatísticas dos jogadores deveriam ser armazenadas por partida ou de forma agregada por temporada.
+
+### Decisão
+
+Na versão 1.0 do SQUAD, as estatísticas serão armazenadas de forma consolidada por temporada.
+
+Cada jogador possuirá apenas um registro estatístico referente ao seu desempenho acumulado na temporada.
+
+### Motivos
+
+- Reduz significativamente o trabalho de inserção manual dos dados.
+- Simplifica a modelagem inicial do banco.
+- Atende completamente às necessidades dos dashboards da versão 1.0.
+- Mantém o projeto acessível para fins de estudo.
+- Permite evolução futura sem necessidade de reconstruir o banco de dados.
+
+### Consequências
+
+Caso o projeto evolua para versões futuras, será criada uma nova entidade responsável por armazenar estatísticas individuais por partida, preservando a compatibilidade com a estrutura existente.
